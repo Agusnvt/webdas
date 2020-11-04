@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <title>Registrasi</title>
+    <style type="text/css">
+        
+            input[type="text"]{
+                width: 10%;
+                transition: 1s ease-in-out;
+                border : 2px solid grey;                          
+            }
+            input[type="text"]:focus{
+                width: 30%;
+                box-shadow: 0 0 12px rgba(32,239,248,1);                
+            }
+            input[type="text"]:hover{
+                transition: 1s ease-in-out;
+            }
+            form{
+                padding:50px 300px 0 300px;
+            }
+            legend{
+                text-align: left;
+                color: blue;               
+            }
+            body{
+                background: url(img/form.jpg);
+                background-size: 1550px 1250px;                
+            }
+            fieldset{
+                
+                border-style:none;
+                background-color: rgba(169,239,152,1);
+            }
+            h2{
+                color: maroon;
+            }        
+    </style>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset>
+            <h2 style="text-align: center;">FORMULIR PPDB JALUR ZONASI<br>TAHUN 2020</h2>
+
+            <fieldset>
+                <legend>INFO PENDAFTARAN</legend>
+                <p>
+                    <label>NISN :</label>
+                    <input type="text" name="nisn" placeholder="NISN...">
+                </p>
+                <p>
+                    <label>Asal Sekolah :</label>
+                    <input type="text" name="asal sekolah" placeholder="Asal Sekolah...">
+                </p>
+                <p>
+                    <label>Tahun Lulus :</label>
+                    <input type="text" name="tahun lulus" placeholder="Tahun Lulus...">
+                </p>
+                <p>
+                    <label>Lampirkan foto ijasah:</label>
+                    <input type="file" name="foto" accept="image/*"/>
+                    <input type="submit" name="tombol" value="Kirim"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>DATA CALON PESERTA</legend>
+                <p>
+                    <label>Nama Lengkap :</label>
+                    <input type="text" name="nama" placeholder="Nama Lengkap...">
+                </p>
+                <p>
+                    <label>NIK :</label>
+                    <input type="text" name="nik" placeholder="NIK...">
+                </p>
+                <p>
+                    <label>Tempat/Tanggal Lahir</label>
+                    <input type="text" name="tempat" placeholder="Tempat...">
+                    <label >Date:</label>
+                    <input type="date"><br>
+                    <label>Foto Copy Akte Kelahiran Yang Telah Dilegalisir (Dilampirkan) :</label><br>
+                    <input type="file" name="foto" accept="image/*"/><br><br>
+                    <input type="submit" name="tombol" value="Kirim"/>
+                </p>
+                <p>
+                    <label>Jenis kelamin:</label>
+                    <label><input type="radio" name="jenis kelamin" value="laki-laki" />Laki-laki</label>
+                    <label><input type="radio" name="jenis kelamin" value="Perempuan" />
+                    Perempuan</label>
+                </p>
+                <p>
+                    <label>Alamat :</label><br>
+                    <label>Desa/Kel : <input type="text" name="desa" placeholder="Desa/Kel..."></label><br>
+                    <label>Kecamatan : <input type="text" name="kecamatan" placeholder="Kecamatan..."></label><br>
+                    <label>Kabupaten : <input type="text" name="kabupaten" placeholder="Kabupaten..."></label><br>
+                    <label>Provinsi : <input type="text" name="provinsi" placeholder="Provinsi..."></label><br>
+                </p>
+                <p>
+                    <label>Email Aktif :</label>
+                    <input type="text" name=" email" placeholder="Email">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>DATA ORANG TUA</legend>
+
+                <p>
+                    <label>Nomor Kartu Keluarga :</label>
+                    <input type="text" name="nik ortu" placeholder="Nomor Kartu Keluarga...">
+                </p>
+                <p>
+                    <label>Nama Ayah Kandung :</label>
+                    <input type="text" name="nama ayah" placeholder="Nama Ayah Kandung...">
+                </p>
+                <p>
+                    <label>Agama:</label>
+                    <select name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="islam">Kristen</option>
+                        <option value="islam">Hindu</option>
+                        <option value="islam">Budha</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Pekerjaan :</label>
+                    <input type="text" name="pekerjaan" placeholder="Pekerjaan...">
+                </p>
+                <p>
+                    <label>Nama Ibu Kandung :</label>
+                    <input type="text" name="nama ibu" placeholder="Nama Ibu Kandung...">
+                </p>
+                <p>
+                    <label>Agama:</label>
+                    <select name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="islam">Kristen</option>
+                        <option value="islam">Hindu</option>
+                        <option value="islam">Budha</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Pekerjaan :</label>
+                    <input type="text" name="pekerjaan" placeholder="Pekerjaan...">
+                </p>
+                <p>
+                    <label>Alamat :</label><br>
+                    <label>Desa/Kel : <input type="text" name="desa" placeholder="Desa/Kel..."></label><br>
+                    <label>Kecamatan : <input type="text" name="kecamatan" placeholder="Kecamatan..."></label><br>
+                    <label>Kabupaten : <input type="text" name="kabupaten" placeholder="Kabupaten..."></label><br>
+                    <label>Provinsi : <input type="text" name="provinsi" placeholder="Provinsi..."></label><br>
+                </p>
+            </fieldset>              
+        </fieldset>
+    </form>
+</body>
+</html>
