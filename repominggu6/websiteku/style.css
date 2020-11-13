@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;    
+    }
+#nav{
+    background-color:rgba(255,255,255,0.10);
+    width: 99.5%;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: gold;
+    animation-name: glowing;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+    
+}
+@keyframes glowing{
+    0%{box-shadow: 0 0 12px lime;}
+    25%{box-shadow: 0 0 12px purple;}
+    50%{box-shadow: 0 0 12px red;}
+    75%{box-shadow: 0 0 12px blue;}
+    100%{box-shadow: 0 0 12px pink;}
+}
+#nav ul li{
+    margin-top: 10px;
+    border:1px solid gold; 
+    color:white;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-left: 13px;
+    
+}
+#nav li:hover{
+    background-color:black;
+    box-shadow: 0 0 12px gold;
+    transition: 1s ease-in-out;
+    font-size: 9px;  
+}  
+#gambar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: glowing;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+    margin-bottom: 20px;
+
+}
+
+body{
+    
+    background-image: url(img/bg.jpg);
+    background-size: 1550px 800px;
+    color:white;
+    
+}
+#overview{
+    border: none;    
+    padding: 10px 0px 20px;
+    margin: 0px 200px;
+    background-color:rgba(255,255,255,0.10);
+}
+#tabel1{
+    margin: 20px 200px;
+    background-color: rgba(255,255,255,0.10);
+    
+}
+#form{
+    border: none;
+    margin: 0px 200px ;
+    margin-top: 50px;
+    padding: 20px;
+    background-color:rgba(255,255,255,0.10);
+    color: yellow;
+    margin-bottom: 30px;
+}
+#footer{
+    padding-top: 10px;
+    background-color:rgba(255,255,255,0.10);
+    width: 99.5%;
+    height: 30px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: gold;
+    animation-name: glowing;
+    animation-duration: 3s;
+    animation-iteration-count:infinite ;
+
+}
+#artikel{
+    border: none;
+    margin: 0px 200px ;
+    margin-top: 120px;
+    padding: 20px;
+    background-color:rgba(255,255,255,0.10);
+    color: white;
+    margin-bottom: 100px;
+}
+
